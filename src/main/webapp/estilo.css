@@ -582,8 +582,14 @@ transform: scale(1.1);
 	background-repeat: no-repeat;
 	
 	display: flex;
+	flex-direction:column;
 	align-items: center;
 	justify-content: center;
+}
+
+.error-page p {
+	color:white;
+	background-color: #444;
 }
 
 .error-page h2 {

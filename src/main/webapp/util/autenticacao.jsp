@@ -25,10 +25,16 @@ try {
 	Statement st = conexao.createStatement();
 	ResultSet rs_login = st.executeQuery("SELECT * from loginusuario WHERE cpf_cliente='"+cpf+"' AND senha='"+senha+"'");
 	if(rs_login.next()) {
-		ResultSet rs_cliente = st.executeQuery("SELECT nome, endereco FROM cliente WHERE cpf='"+cpf+"'");
+		ResultSet rs_cliente = st.executeQuery("SELECT nome, endereco, email, telefone, numeroCartao FROM cliente WHERE cpf='"+cpf+"'");
 		rs_cliente.next();
 		String nome = rs_cliente.getString("nome");
 		String endereco = rs_cliente.getString("endereco");
+		String email = rs_cliente.getString("email");
+		String numero = rs_cliente.getString("numeroCartao");
+		String telefone = rs_cliente.getString("telefone");
+		session.setAttribute("email", email);
+		session.setAttribute("numeroCartao", numero);
+		session.setAttribute("telefone", telefone);
 		session.setAttribute("mensagem", "Autenticado");
 		session.setAttribute("login", "true");
 		session.setAttribute("nome", nome);

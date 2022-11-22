@@ -25,7 +25,7 @@
   
       <!--NAVBAR-->
   <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg background-white" style="position: fixed;top: 0;left: 0;right: 0;box-shadow: 2px 2px 5px 5px rgba(238, 237, 237, 0.6); z-index:1000;">
   <a class="navbar-brand" href="index.jsp">Wasabi Sushi</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -35,15 +35,21 @@
     
     <!-- ---------------------------- ITEM  ------------------------------ -->
       <li class="nav-item active">
-        <a class="nav-link" href="">${nome}</span></a>
+        <a class="nav-link" href="">Bem vindo, ${nome}<span class="sr-only">(current)</span></a>
       </li>
     <!-- ---------------------------- ITEM  ------------------------------ -->
-      <li class="nav-item active">
-        <a class="nav-link btn btn-warning" href="" data-bs-toggle="modal" data-bs-target="#myModal2">Carrinho<span class="sr-only">(current)</span></a>
-      </li>
+    
+      
     <!-- ---------------------------- ITEM  ------------------------------ -->
 
     </ul>
+    
+      
+        <a class="nav-link" href="http://localhost:8080/WassabiAppServer/alteracao.jsp">Editar Perfil<span class="sr-only" style="margin-right:2%">(current)</span></a>
+      
+     
+        <a class="nav-link btn btn-danger" href="" data-bs-toggle="modal" data-bs-target="#myModal2" style="margin-right:2%;"><i class="fa-solid fa-bag-shopping"></i><span class="sr-only">(current)</span></a>
+     
     <a href="logout.jsp"><span class="navbar-text">
       Sair
     </span></a>
@@ -52,7 +58,7 @@
   <!--NAVBAR-->
 
   <!--/NAVBAR-->
-
+	<br><br><br><br>
     <div class="container-fluid viewport d-flex align-items-center justify-content-center flow">
     <h1> Finalizar Pedido </h1>
     <div class="pedido-container flow">
