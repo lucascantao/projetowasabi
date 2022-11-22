@@ -50,6 +50,7 @@
         <span class="input-group-text">Endereço</span>
         <textarea class="form-control" name="endereco" aria-label="With textarea"></textarea>
         </div>
+        <input type="hidden" value="cadastro" name="tipoformulario" />
         <input class="btn btn-dark full-width" type="submit" value="Cadastrar">
        </form>  
       </div>

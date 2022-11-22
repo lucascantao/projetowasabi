@@ -74,6 +74,7 @@
     <div class="col-md-12 d-flex align-items-center justify-content-start fit-size">Endereço: <strong><%= session.getAttribute("endereco") %></strong> </div>  
      <input type="hidden" class="form-control border-none background-none" aria-label="Username" readonly value="<%= session.getAttribute("endereco") %>" name="enderecodocliente">
     </div>  
+    <br><br>
 
     <div class="row flow no-margin">
     <% 
@@ -107,19 +108,23 @@
     <div class="col-md-3 d-flex align-items-center justify-content-start fit-size"> Valor: <%= p.getPreco() %> R$ </div>
      <input type="hidden" class="form-control border-none background-none" value="<%= p.getPreco() %>" name="nomedoproduto">
     <div class="col-md-3 d-flex align-items-center justify-content-start  fit-size" >Descrição:  <%= p.getDescricao() %></div>
+    <br>
+    
     <% } %>
     <div class="col-md-3 d-flex align-items-center justify-content-start  fit-size" >Valor Total: <%= session.getAttribute("valorTotal") %></div>
     </div>  
 
    </div>
    
+   <br>
    <div class="botoes fit-size">
-    <input type="submit" class="btn btn-dark d-flex fit-size" aria-label="Username" readonly value="confirmarpedido" name="tipoformulario" style="margin-right:2%;">
-    <a href="index.jsp" class="btn btn-dark d-flex fit-size" aria-label="Username" style="margin-left:2%;">Voltar a loja</a> 
+    <input type="submit" class="btn btn-success d-flex fit-size" aria-label="Username" readonly value="confirmarpedido" name="tipoformulario" style="margin-right:2%;">
+    <a href="index.jsp" class="btn btn-dark d-flex fit-size" aria-label="Username" style="margin-top:2%;">Voltar a loja</a> 
     
   </div>
   
      </form>
+     <br>
     </div>
   
     </div>  
