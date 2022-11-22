@@ -1,0 +1,3 @@
+*Substituir o arquivo de Imagens atual pelo novo arquivo de imagens
+*Substituir o arquivo CSS atual pelo novo arquivo CSS
+*Adicionar a página login.jsp à pasta webapp do projeto
